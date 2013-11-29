@@ -1,0 +1,28 @@
+background no
+use_xft yes
+xftfont Monospace:size=10
+alignment top_left
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_colour hotpink
+own_window_hints undecorated,below,skip_taskbar,sticky,skip_pager
+double_buffer yes
+gap_x 840
+use_spacer
+update_interval 1
+
+TEXT
+${color brown}./${nodename}
+Uptime: ${uptime}
+CPU Usage: ${cpu cpu0}%
+            
+        
+                Memory Usage: ${memperc}% | ${mem}
+                Free Space: ${fs_free_perc}% | ${fs_free}
+        
+        
+                                 Battery: ${battery_percent}%
+                                     Time Remaining: ${battery_time}
+                                
+        
